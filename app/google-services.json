@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "19092426727",
+    "project_id": "boda-fcbe7",
+    "storage_bucket": "boda-fcbe7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19092426727:android:eb3e6c93b967b2b5347742",
+        "android_client_info": {
+          "package_name": "com.christine.boda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19092426727-b3ge1ule7irb08n40u6vlstk0vb9cbqr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1R4ElBOLRRXfxoGqopSwcuFZPBrYLYGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19092426727-b3ge1ule7irb08n40u6vlstk0vb9cbqr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
