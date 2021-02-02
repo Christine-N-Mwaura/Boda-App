@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SocialMedia">
+
+<!--    <TextView-->
+<!--        android:id="@+id/enterAccTxtView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginLeft="24dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:layout_marginEnd="256dp"-->
+<!--        android:layout_marginRight="256dp"-->
+<!--        android:text="@string/choose_account"-->
+<!--        android:textColor="@color/hint_color"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/google_img"-->
+<!--        android:layout_width="32dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_marginStart="96dp"-->
+<!--        android:layout_marginLeft="96dp"-->
+<!--        android:layout_marginTop="112dp"-->
+<!--        android:layout_marginEnd="113dp"-->
+<!--        android:layout_marginRight="113dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.857"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/google_logo_removebg_preview" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/facebookTxt"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="108dp"-->
+<!--        android:text="@string/facebook"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/facebook_img"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/google_txt"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginLeft="8dp"-->
+<!--        android:layout_marginTop="112dp"-->
+<!--        android:text="@string/google"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/google_img"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/facebook_img"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="51dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginTop="52dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/enterAccTxtView"-->
+<!--        app:srcCompat="@drawable/_pngtree_facebook_logo_facebook_icon_3654755__2__removebg_preview" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="363dp"-->
+<!--        android:layout_height="59dp"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginLeft="32dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="@string/media_instructions"-->
+<!--        android:textColor="@color/instructions_color"-->
+<!--        android:textSize="12sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/facebook_img" />-->
+
+
+    <!--        app:layout_constraintBottom_toTopOf="@+id/textUser"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:srcCompat="@drawable/logo" />-->
+
+    <ImageView
+        android:id="@+id/facebook_img"
+        android:layout_width="142dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="195dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginBottom="308dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textUser"
+        android:layout_width="202dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginBottom="96dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

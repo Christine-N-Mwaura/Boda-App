@@ -4,6 +4,11 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'Bodaappkey'
+        }
+    }
     compileSdkVersion 29
     buildToolsVersion "30.0.1"
 
@@ -37,11 +42,14 @@ dependencies {
 //    implementation 'com.googlecode.libphonenumber:libphonenumber:8.8.0'
     implementation 'com.jakewharton:butterknife:10.2.0'
     implementation 'com.google.firebase:firebase-database:19.2.1'
+    implementation 'com.google.firebase:firebase-auth:19.3.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
     implementation 'com.hbb20:ccp:2.4.5'
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
 //    implementation 'com.airbnb.android:lottie:3.0.0'
     implementation 'com.daimajia.androidanimations:library:2.4@aar'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }

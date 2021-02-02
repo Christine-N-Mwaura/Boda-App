@@ -3,4 +3,14 @@
     <string name="tag_line">Safe Rides Anywhere</string>
     <string name="phone_hint">Phone Number</string>
     <string name="connect_social">Or connect using social media</string>
+    <string name="next">Next</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="choose_account">Choose an Account</string>
+    <string name="enterName">Please enter your mobile number</string>
+    <string name="media_instructions">By clicking on a social option you may receive an SMS  for verification.
+Message and data rates may apply</string>
+    <string name="facebook_app_id">1294105320966402</string>
+    <string name="fb_login_protocol_scheme">fb1294105320966402</string>
+
 </resources>

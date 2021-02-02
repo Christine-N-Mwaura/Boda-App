@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/goTo_start"
-        android:layout_width="61dp"
-        android:layout_height="23dp"
+        android:layout_width="84dp"
+        android:layout_height="72dp"
         android:text="Go to get started"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
