@@ -13,11 +13,11 @@ public class GetStarted extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_started);
-        Button getStartedBtn = findViewById(R.id.getStartedBtn);
+        Button getStartedBtn = findViewById(R.id.loginBtn);
         getStartedBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(GetStarted.this, Register.class);
+                Intent intent = new Intent(GetStarted.this, MainActivity.class);
                 startActivity(intent);
             }
         });

@@ -3,7 +3,7 @@
     <string name="tag_line">Safe Rides Anywhere</string>
     <string name="phone_hint">Phone Number</string>
     <string name="connect_social">Or connect using social media</string>
-    <string name="next">Next</string>
+
     <string name="facebook">Facebook</string>
     <string name="google">Google</string>
     <string name="choose_account">Choose an Account</string>
@@ -12,5 +12,41 @@
 Message and data rates may apply</string>
     <string name="facebook_app_id">1294105320966402</string>
     <string name="fb_login_protocol_scheme">fb1294105320966402</string>
+    <string name="sign_up_txt">Create Account</string>
+    <string name="firstname_head">First name (required)</string>
+    <string name="lastname_head">Last name (required)</string>
+    <string name="email_head">Enter your email (required)</string>
+    <string name="password_head">Enter a password(required)</string>
+    <string name="firstname_hint">First name</string>
+    <string name="lastname_hint">Last name</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="create_account_text">Create Account</string>
+    <string name="phone_number">Phone Number</string>
+
+    <string name="enter_otp">Enter OTP</string>
+    <string name="verify_sign_in">Verify and Sign In</string>
+    <string name="sign_out">sign out</string>
+
+
+    //otp strings
+    <string name="otp_verification_text">OTP Verification</string>
+    <string name="otp_description_text">Enter the 6-digit code sent to </string>
+    <string name="resend_otp">RESEND OTP</string>
+    <string name="didnt_receive_the_otp">Didn\'t receive the OTP?</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="next">Next</string>
+
+    //Sign up buttons
+    <string name="register">Register</string>
+    <string name="login">LogIn</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="create_account">Create Account</string>
+    <string name="phone_no">Phone e.g 712345342</string>
+
 
 </resources>

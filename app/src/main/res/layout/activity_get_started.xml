@@ -8,44 +8,43 @@
     tools:context=".GetStarted">
 
     <Button
-        android:id="@+id/getStartedBtn"
-        android:layout_width="312dp"
-        android:layout_height="62dp"
+        android:id="@+id/loginBtn"
+        android:layout_width="176dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="88dp"
         android:background="@drawable/roundedbtn"
-        android:text="Get Started"
+        android:text="@string/login"
         android:textColor="@color/black"
         app:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.616"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.857" />
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="176dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/roundedbtn"
+        android:text="@string/register"
+        android:textColor="@color/black"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toEndOf="@+id/loginBtn" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="357dp"
         android:layout_height="445dp"
-        app:layout_constraintBottom_toTopOf="@+id/getStartedBtn"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.124"
         app:srcCompat="@drawable/boda_logo" />
-
-    <TextView
-        android:id="@+id/tagLine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tag_line"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/getStartedBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

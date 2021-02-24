@@ -4,17 +4,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
+
     <TextView
-        android:id="@+id/goTo_start"
-        android:layout_width="84dp"
-        android:layout_height="72dp"
-        android:text="Go to get started"
+        android:id="@+id/register_txtView"
+        android:layout_width="281dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/enterName"
+        android:textColor="@color/hint_color"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/ccp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/phoneNoEditText"
+        android:layout_width="221dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint_color"
+        android:textColorLink="@color/hint_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_txtView" />
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        app:ccp_defaultNameCode="KE"
+        app:layout_constraintEnd_toStartOf="@+id/phoneNoEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_txtView"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/getOtp"
+        android:layout_width="208dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="419dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/roundedbtn"
+        android:text="@string/next"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/phoneNoEditText"
+        app:layout_constraintVertical_bias="0.447" />
+
+    <TextView
+        android:id="@+id/connect_socialTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/connect_social"
+        android:textColor="@color/link_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNoEditText" />
+
+
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/enter_otp"-->
+<!--        android:layout_width="313dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="88dp"-->
+<!--        android:hint="@string/enter_otp"-->
+<!--        android:textColor="@color/text_color"-->
+<!--        android:textColorHint="@color/hint_color"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/connect_socialTxtView" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/generate_otp"-->
+<!--        android:layout_width="199dp"-->
+<!--        android:layout_height="65dp"-->
+<!--        android:layout_marginTop="108dp"-->
+<!--        android:background="@drawable/roundedbtn"-->
+<!--        android:text="@string/generate_otp"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/registerBtn"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/enter_otp"-->
+<!--        tools:layout_editor_absoluteX="102dp" />-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
