@@ -47,6 +47,7 @@ Message and data rates may apply</string>
     <string name="forgot_password">Forgot Password ?</string>
     <string name="create_account">Create Account</string>
     <string name="phone_no">Phone e.g 712345342</string>
+    <string name="where_to">Where to?</string>
 
 
 </resources>

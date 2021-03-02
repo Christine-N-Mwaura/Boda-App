@@ -53,8 +53,7 @@ public class SplashScreen extends AppCompatActivity {
         ButterKnife.bind(this);
         Paper.init(this);
 
-        UserPhoneKey = Paper.book().read(Prevalent.UserPhoneKey);
-        UserPassword = Paper.book().read(Prevalent.UserPasswordKey);
+
 
         DownTop = AnimationUtils.loadAnimation(this, R.anim.downtop);
         Fade = AnimationUtils.loadAnimation(this, R.anim.fade);

@@ -1,4 +1,4 @@
-package com.christine.boda;
+  package com.christine.boda;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -36,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
     @BindView(R.id.login_country_code_picker) CountryCodePicker ccp;
     @BindView(R.id.login_progress_bar) ProgressBar loginProgressBar;
     @BindView(R.id.create_Acc_Btn) Button createAccBtn;
-    String Phone, Password, userPassword;
+    String Phone, Password, userPassword,Tag;
 
 
     @Override
@@ -45,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
 
-        Paper.init(this);
+        Paper.init(LoginActivity.this);
 
         createAccBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,8 +81,10 @@ public class LoginActivity extends AppCompatActivity {
             if(rememberMeChkbx.isChecked())
             {
 
-                Paper.book().write(Prevalent.UserPhoneKey, phone);
+                Paper.book().write(Prevalent.UserPhoneKey, Phone);
                 Paper.book().write(Prevalent.UserPasswordKey,password);
+                Log.d(Tag,"UserPhoneKey" + Prevalent.UserPhoneKey);
+
             }
             loginProgressBar.setVisibility(View.VISIBLE);
 

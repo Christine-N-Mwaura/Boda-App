@@ -1,19 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Destination">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Destination"
+    app:umanoDragView="@id/dragView"
+    app:umanoScrollableView="@id/listView"
+    android:layout_gravity="bottom"
+    android:gravity="bottom">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Destination"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+   <fragment
+       android:id="@+id/google_map"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:name="com.google.android.gms.maps.SupportMapFragment" />
+</RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/dragView"
+       android:focusable="false"
+       android:clickable="true"
+       android:orientation="vertical">
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="120dp">
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/login_phone_number"
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="@string/where_to"
+             android:paddingTop="8dp"
+             android:paddingLeft="24dp"
+             android:paddingRight="24dp"
+             app:boxStrokeWidthFocused="2dp"
+             app:endIconMode="clear_text"
+             app:endIconTint="@color/black"
+             app:hintTextColor="@color/text_color"
+             app:startIconDrawable="@drawable/ic_baseline_pedal_bike_24"
+             app:startIconTint="@color/button_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_destination"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_border"
+                android:textColor="@color/text_color"
+                android:textCursorDrawable="@null"/>
+
+         </com.google.android.material.textfield.TextInputLayout>
+      </RelativeLayout>
+      <ListView
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+         android:layout_weight="1"
+          android:id="@+id/listView">
+
+      </ListView>
+
+
+   </LinearLayout>
+
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

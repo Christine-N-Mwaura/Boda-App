@@ -52,6 +52,10 @@ dependencies {
     // Also declare the dependency for the Google Play services library and specify its version
     implementation 'com.google.android.gms:play-services-auth:19.0.0'
     implementation 'com.google.android.gms:play-services-auth-api-phone:17.4.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.karumi:dexter:6.2.2'
+    implementation 'com.sothree.slidinguppanel:library:3.4.0'
 
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
     implementation 'com.hbb20:ccp:2.4.5'
@@ -66,5 +70,6 @@ dependencies {
     //paper library
     implementation 'io.paperdb:paperdb:2.7.1'
     implementation 'androidx.multidex:multidex:2.0.1'
+
 
 }
