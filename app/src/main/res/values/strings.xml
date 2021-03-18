@@ -49,5 +49,7 @@ Message and data rates may apply</string>
     <string name="phone_no">Phone e.g 712345342</string>
     <string name="where_to">Where to?</string>
 
+    <string name="navigation_drawer_open">open navigation drawer</string>
+    <string name="navigation_drawer_close">close navigation drawer</string>
 
 </resources>

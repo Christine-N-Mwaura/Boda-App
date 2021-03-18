@@ -71,5 +71,9 @@ dependencies {
     implementation 'io.paperdb:paperdb:2.7.1'
     implementation 'androidx.multidex:multidex:2.0.1'
 
+    //navigation bar dependencies
+    implementation "androidx.navigation:navigation-fragment:2.3.3"
+    implementation "androidx.navigation:navigation-ui:2.3.3"
+
 
 }

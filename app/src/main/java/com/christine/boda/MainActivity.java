@@ -33,9 +33,6 @@ public class MainActivity extends AppCompatActivity {
     CountryCodePicker ccp;
 
 
-
-
-
     String phoneNumber;
     private FirebaseAuth mAuth;
     private String verificationCode;
