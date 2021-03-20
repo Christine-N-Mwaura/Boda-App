@@ -1,15 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:background="@color/white">
 
-    <TextView
+
+    <ImageView
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ratings"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"
-        android:textColor="@color/black"/>
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginRight="131dp"
+        app:srcCompat="@drawable/bike_removebg_preview" />
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="85dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginBottom="428dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:paddingLeft="0dp"
+        android:paddingTop="200dp"
+        android:progressTint="@color/button_color"
+        android:rating="2.5"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:id="@+id/ratingtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="156dp"
+        android:layout_marginRight="156dp"
+        android:layout_marginBottom="366dp"
+        android:text="@string/rating_rider"
+        android:textColor="@color/text_color"
+        android:textSize="24sp" />
+
 
 </RelativeLayout>

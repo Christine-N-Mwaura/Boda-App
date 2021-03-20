@@ -52,4 +52,7 @@ Message and data rates may apply</string>
     <string name="navigation_drawer_open">open navigation drawer</string>
     <string name="navigation_drawer_close">close navigation drawer</string>
 
+
+    //Ratings activity strings
+    <string name="rating_rider">Rate rider</string>
 </resources>

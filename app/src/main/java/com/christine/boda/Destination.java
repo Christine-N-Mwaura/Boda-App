@@ -38,6 +38,7 @@ import com.karumi.dexter.listener.PermissionDeniedResponse;
 import com.karumi.dexter.listener.PermissionGrantedResponse;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.single.PermissionListener;
+import com.sothree.slidinguppanel.SlidingUpPanelLayout;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -48,11 +49,15 @@ public class Destination extends AppCompatActivity implements NavigationView.OnN
     private SupportMapFragment supportMapFragment;
     private  FusedLocationProviderClient client;
     private int REQUEST_CODE = 111;
+    private static final String TAG = "DestinationActivity";
+
+    private SlidingUpPanelLayout mLayout;
     Menu menu;
     @BindView(R.id.listView) ListView listView;
     @BindView(R.id.myToolbar) Toolbar toolbar;
     @BindView(R.id.drawer_layout) DrawerLayout drawerLayout;
     @BindView(R.id.nav_view) NavigationView navigationView;
+    @BindView(R.id.slide_panel) SlidingUpPanelLayout layout;
 
 
     @Override

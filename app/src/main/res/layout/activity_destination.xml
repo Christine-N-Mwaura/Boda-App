@@ -15,19 +15,25 @@
        android:id="@+id/myToolbar"
        layout="@layout/toolbar"/>
    
+
+
    <FrameLayout
        android:layout_width="match_parent"
        android:layout_height="match_parent"
-      android:id="@+id/Fragment_container">
+       android:id="@+id/Fragment_container">
+
 
       <com.sothree.slidinguppanel.SlidingUpPanelLayout
           android:id="@+id/slide_panel"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
-          app:umanoDragView="@id/dragView"
+          app:umanoDragView="@+id/dragView"
           app:umanoScrollableView="@id/listView"
-          android:gravity="bottom">
-
+          android:gravity="bottom"
+          app:umanoPanelHeight="68dp"
+          app:umanoOverlay="false"
+          app:umanoParallaxOffset="100dp"
+          app:umanoShadowHeight="4dp">
 
 
          <RelativeLayout
@@ -52,32 +58,14 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp">
-                  <com.google.android.material.textfield.TextInputLayout
-                      android:id="@+id/login_phone_number"
-                      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                      android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:hint="@string/where_to"
-                      android:paddingTop="8dp"
-                      android:paddingLeft="24dp"
-                      android:paddingRight="24dp"
-                      app:boxStrokeWidthFocused="2dp"
-                      app:endIconMode="clear_text"
-                      app:endIconTint="@color/black"
-                      app:hintTextColor="@color/text_color"
-                      app:startIconDrawable="@drawable/ic_baseline_pedal_bike_24"
-                      app:startIconTint="@color/button_color">
+                android:layout_height="68dp">
 
-                     <com.google.android.material.textfield.TextInputEditText
-                         android:id="@+id/et_destination"
-                         android:layout_width="match_parent"
-                         android:layout_height="match_parent"
-                         android:background="@drawable/grey_border"
-                         android:textColor="@color/text_color"
-                         android:textCursorDrawable="@null"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                  android:paddingLeft="16sp"
+                  android:text="Action"/>
 
-                  </com.google.android.material.textfield.TextInputLayout>
             </RelativeLayout>
             <ListView
                 android:layout_width="match_parent"
@@ -90,8 +78,8 @@
 
          </LinearLayout>
 
-
       </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
 
    </FrameLayout>
 
@@ -102,5 +90,6 @@
        app:headerLayout="@layout/header"
        app:menu="@menu/main_menu"
        android:layout_gravity="start"/>
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
