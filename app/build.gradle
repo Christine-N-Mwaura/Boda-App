@@ -56,6 +56,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-location:18.0.0'
     implementation 'com.karumi:dexter:6.2.2'
     implementation 'com.sothree.slidinguppanel:library:3.4.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
     implementation 'com.hbb20:ccp:2.4.5'
@@ -74,6 +75,9 @@ dependencies {
     //navigation bar dependencies
     implementation "androidx.navigation:navigation-fragment:2.3.3"
     implementation "androidx.navigation:navigation-ui:2.3.3"
+
+    //app review dependency
+    implementation 'com.google.android.play:core:1.8.2'
 
 
 }

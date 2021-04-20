@@ -123,8 +123,12 @@ public class Destination extends AppCompatActivity implements NavigationView.OnN
                 getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container,new PaymentFragment()).commit();
                 break;
 
+//            case R.id.nav_rate:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container,new RatingsFragment()).commit();
+//                break;
             case R.id.nav_rate:
-                getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container,new RatingsFragment()).commit();
+                Intent i=new Intent(this,RatingActivity.class);
+                startActivity(i);
                 break;
             case R.id.nav_home:
                 Intent intent=new Intent(this,Destination.class);

@@ -55,4 +55,7 @@ Message and data rates may apply</string>
 
     //Ratings activity strings
     <string name="rating_rider">Rate rider</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="feedback_hint">Enter your feedback</string>
 </resources>
